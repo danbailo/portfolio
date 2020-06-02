@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>Daniel Bailo</title>
         <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/img/favicon.ico') }}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
@@ -21,15 +21,22 @@
 
         {% include "components/navbar.html" %}
 
-        {% include "components/head.html" %}
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-heading">Daniel Bailo</div>
+                <div class="masthead-subheading">É um prazer ter você por aqui!</div>
+                <a class="btn btn-light btn-xl text-uppercase js-scroll-trigger" href="#skills">Venha me conhecer!</a>
+            </div>
+        </header>
 
-        {% include "services.html" %}
+        {% include "skills.html" %}
 
         {% include "portifolio.html" %}
 
         {% include "about.html" %}
  
-        {% include "team.html" %}
+        {#% include "team.html" %#}
 
         {% include "components/clients.html" %}
  

@@ -10028,12 +10028,14 @@ p {
   }
 }
 ::-moz-selection {
-  background: #fed136;
+  /* background: #fed136; */
+  background: #212529;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #212529;
+  color: white;
   text-shadow: none;
 }
 
@@ -10097,7 +10099,8 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  /* color: #fed136; */
+  color: rgb(153, 147, 147);
 }
 
 @media (min-width: 992px) {
@@ -10176,7 +10179,7 @@ header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
   }
 }
 #portfolio .portfolio-item {
@@ -10194,7 +10197,8 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(254, 209, 54, 0.9);
+  /* background: rgba(254, 209, 54, 0.9); */
+  background: rgba(70, 69, 67, 0.9);
   align-items: center;
   justify-content: center;
   opacity: 0;
