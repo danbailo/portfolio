@@ -159,7 +159,8 @@ sup {
 }
 
 a {
-  color: #fed136;
+  /* color: #fed136; */
+  color: #212529;
   text-decoration: none;
   background-color: transparent;
 }
