@@ -5,7 +5,7 @@
             <h2 class="section-heading text-uppercase">Entre em contato!</h2>
             <h3 class="section-subheading text-light">Me envie um email com dúvidas, sugestões, etc. Irei te respondender com muito prazer!</h3>
         </div>
-        <form action="{{ url_for('email')}}" method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
+        <form action="{{ url_for('index')}}" method="POST" novalidate="novalidate">
             {{ form.hidden_tag() }}
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
@@ -30,7 +30,7 @@
             </div>
             <div class="text-center">
                 <div id="success"></div>
-                <button class="btn btn-light btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar Mensagem</button>
+                <button class="btn btn-light btn-xl text-uppercase" type="submit">Enviar Mensagem</button>
             </div>
         </form>
     </div>
