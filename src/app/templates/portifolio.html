@@ -3,7 +3,13 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Portfólio</h2>
-            <h3 class="section-subheading text-muted">Principais repositórios do GitHub.</h3>
+            <h3 class="section-subheading text-muted">Principais repositórios do meu GitHub. <a class="btn btn-dark btn-social mx-1" href="https://www.github.com/danbailo"><i class="fab fa-github"></i></a> </h3>
+         
+            <h3 class="section-subheading text-dark">
+                Desenvolvi um <i>Scraper</i> para coletar as informações dos repositórios fixados do meu perfil no GitHub.
+                A ideia é que, como portfolio, seja apresentado meus principais projetos, visto que a plataforma só permite fixar seis repositórios no perfil.
+                O script pode ser visto <a href="https://gist.github.com/danbailo/a693b6bfe18417611f8e41a5df7831f1">aqui</a>.
+            </h3>
         </div>
 
         {% set json = "../docs/pinned_repos.json"|render_json %}
