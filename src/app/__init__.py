@@ -1,19 +1,20 @@
 from flask import Flask
 from flask_mail import Mail
 
+from app.credentials import MAIL_PASSWORD, MAIL_USERNAME, SECRET_KEY
+
 mail = Mail()
 
 
 def create_app():
     app = Flask(__name__, static_folder="static")
-    app.config["SECRET_KEY"] = "DontTellAnyone"
+    app.config["SECRET_KEY"] = SECRET_KEY
     app.config["MAIL_SERVER"] = "smtp.gmail.com"
     app.config["MAIL_PORT"] = 465
     app.config["MAIL_USE_SSL"] = True
-    app.config["MAIL_DEBUG"] = True
-    app.config["MAIL_USERNAME"] = "danbailotest"
-    app.config["MAIL_PASSWORD"] = "mystrongpassword"
-    app.config["MAIL_DEFAULT_SENDER"] = 'YOU <danbailotest@gmail.com>'
+    app.config["MAIL_USERNAME"] = MAIL_USERNAME
+    app.config["MAIL_PASSWORD"] = MAIL_PASSWORD
+    # app.config["MAIL_DEFAULT_SENDER"] = 'YOU <danbailotest@gmail.com>'
 
     mail.init_app(app)
 
