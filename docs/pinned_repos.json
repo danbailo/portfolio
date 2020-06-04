@@ -1,17 +1,32 @@
 {
     "DataAnalysis-UFMS": {
         "link_repo": "/danbailo/DataAnalysis-UFMS",
-        "description_repo": "Analisando dados do IntegraUFMS2018/2019",
+        "description_repo": "Coleta de dados a partir dos editais de publiçação(.pdf) do IntegraUFMS 2018/2019. Após a coleta, foi realizado uma análise dos dados relacionado com a representatividade de cada campus no evento.",
         "predominant_lang": "Jupyter Notebook"
+    },
+    "portfolio": {
+        "link_repo": "/danbailo/portfolio",
+        "description_repo": "Código do meu portfólio. Foi utilizado Flask + MongoDB no back-end & Bootstrap no front-end. O deploy foi realizado na AWS.",
+        "predominant_lang": "CSS"
     },
     "learning-opencv": {
         "link_repo": "/danbailo/learning-opencv",
-        "description_repo": "",
+        "description_repo": "Repositório dedicado para estudar a biblioteca OpenCV a partir da documentação fornecida. Modulo muito importante para utlizar em processamento de imagens.",
         "predominant_lang": "Python"
     },
     "rest-api": {
         "link_repo": "/danbailo/rest-api",
-        "description_repo": "Learning how to develop a RESTful API using Python (Flask)",
+        "description_repo": "Aprendendo a desenvolver API REST & RESTful utilizando Flask.",
+        "predominant_lang": "Python"
+    },
+    "NeuralNetworks": {
+        "link_repo": "/danbailo/NeuralNetworks",
+        "description_repo": "Desenvolvimento de uma Rede Neural Artificial para solucionar o \"Problema da porta XOR\". A saída do programa retorná os gráficos de erro e a imagem do grafo da rede neural gerado.",
+        "predominant_lang": "Python"
+    },
+    "data-extract-pdf": {
+        "link_repo": "/danbailo/data-extract-pdf",
+        "description_repo": "Este projeto foi um trabalho prestado como Freelancer e o mesmo consiste em coletar dados de determinados arquivos .pdfs fornecido pelo cliente.",
         "predominant_lang": "Python"
     }
 }
