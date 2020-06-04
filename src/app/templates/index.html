@@ -27,7 +27,6 @@
         {% include "components/navbar.html" %}
 
         <!-- Masthead-->
-        <span id="top"></span>
         <header class="masthead">
             <div class="container">
                 <div class="masthead-heading">Daniel Bailo</div>
@@ -48,8 +47,6 @@
 
         {% include "components/footer.html" %}
 
-        {% include "components/modals.html" %}
-        
         <!-- Bootstrap core JS -->
         <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
@@ -58,6 +55,5 @@
 
         <!-- Core theme JS-->
         <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
-        <script type="text/javascript" src="../../../docs/pinned_repos.json"></script>
     </body>
 </html>
