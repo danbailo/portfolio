@@ -1,0 +1,17 @@
+{
+    "DataAnalysis-UFMS": {
+        "link_repo": "/danbailo/DataAnalysis-UFMS",
+        "description_repo": "Analisando dados do IntegraUFMS2018/2019",
+        "predominant_lang": "Jupyter Notebook"
+    },
+    "learning-opencv": {
+        "link_repo": "/danbailo/learning-opencv",
+        "description_repo": "",
+        "predominant_lang": "Python"
+    },
+    "rest-api": {
+        "link_repo": "/danbailo/rest-api",
+        "description_repo": "Learning how to develop a RESTful API using Python (Flask)",
+        "predominant_lang": "Python"
+    }
+}
