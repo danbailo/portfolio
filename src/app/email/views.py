@@ -27,8 +27,6 @@ def send_email():
                 """,
         )
         mail.send(msg)
-        flash("Email enviado com sucesso!", "sucess")
-        return redirect(url_for('index'))
-
-    flash("Por favor, verifique os dados e tente novamente!", "warning")
+        flash("Email enviado com sucesso!", "success")
+        return redirect("")
     return render_template("email.html", form=form)
