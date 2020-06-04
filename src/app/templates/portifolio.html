@@ -3,9 +3,37 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Portfólio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">Principais repositórios do GitHub.</h3>
         </div>
+
+        {% set json = "../docs/pinned_repos.json"|render_json %}
+        {% set github = "https://github.com" %}
+        
         <div class="row">
+
+            {% for repo in json %}
+                <div class="col-lg-6 col-sm-6">
+                    <div class="portfolio-item">                        
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading mb-1">{{ repo }}</div>
+                            <!-- <div class="portfolio-caption-subheading text-dark"></div> -->
+                            <p>{{ json[repo]["description_repo"] }}</p>
+                            <div class="portfolio-caption-subheading text-muted">
+                                Predominância: {{ json[repo]["predominant_lang"] }}
+                            </div>
+                            <a class="portfolio-link" data-toggle="modal" href='{{ github + json[repo]["link_repo"] }}'>Link do repositório</a>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}                
+
+
+        </div>
+    
+
+
+        <!-- <div class="row">
             <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1"
@@ -90,6 +118,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
