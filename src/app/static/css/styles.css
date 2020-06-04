@@ -9871,6 +9871,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #212529 !important;
 }
 
+.text-alert {
+  color: red !important;
+}
+
 .text-muted {
   color: #6c757d !important;
 }
