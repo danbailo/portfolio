@@ -6158,8 +6158,12 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #f5f5f5 !important;
 }
+
+/* .bg-light {
+  background-color: #f8f9fa !important;
+} */
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -10186,6 +10190,7 @@ header.masthead .masthead-heading {
   }
 }
 #portfolio .portfolio-item {
+  min-height: auto;
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
