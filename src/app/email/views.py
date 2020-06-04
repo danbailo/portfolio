@@ -13,9 +13,6 @@ def send_email():
     form = EmailForm()
 
     if form.validate_on_submit():
-        print(form.name.data)
-        print(form.email.data)
-        print(form.message.data)
         msg = Message(
             subject=form.subject.data,
             sender=f'{form.subject.data} {MAIL_DEFAULT_SENDER}',
