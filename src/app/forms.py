@@ -39,7 +39,7 @@ class EmailForm(FlaskForm):
         "Mensagem",
         render_kw={
             "placeholder": "Sua Mensagem *",
-            "style": "width: 200%; min-height: 200px;",
+            "style": "width: 150%; min-height: 175px;",
             "label": "message"
         },
         widget=TextArea(),
