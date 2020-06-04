@@ -12,7 +12,7 @@
         <link rel="manifest" href="{{ url_for('static', filename='assets/img/site.webmanifest') }}">
 
         <!-- Font Awesome icons (free version)-->
-        <script src="{{ url_for('static', filename='js/all.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/all.js') }}"></script>
 
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -21,6 +21,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
         
+   
     </head>
     <body id="page-top">
 
@@ -52,12 +53,13 @@
         {% include "components/modals.html" %}
         
         <!-- Bootstrap core JS -->
-        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
          <!-- Third party plugin JS -->
-        <script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
 
         <!-- Core theme JS-->
-        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <script type="text/javascript" src="../../../docs/pinned_repos.json"></script>
     </body>
 </html>
