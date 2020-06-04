@@ -32,7 +32,8 @@ class EmailForm(FlaskForm):
             "label": "email"
         },
         validators=[
-            Email(message="Por favor, insira seu email!")])
+            Email(message="Email inválido!"),
+            DataRequired("Por favor, insira seu email!")])
 
     message = StringField(
         "Mensagem",
