@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Daniel Bailo</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/img/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/img/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ url_for('static', filename='assets/img/site.webmanifest') }}">
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="{{ url_for('static', filename='js/all.js') }}"></script>
+
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+        
+    </head>
+    <body>
+
+        <div class="d-flex justify-content-center align-items-center container">
+            <div class="row mt-5">              
+                <form method="POST" novalidate class="justify-content-center">
+                    {{ form.hidden_tag() }}
+                        <div class="form-group">
+                            {{ form.name.label}}
+                            {{ form.name(class_="form-control")}}
+                            <p class="help-block text-danger"> <small>{{ form.errors.get("name")[0] }}</small> </p>
+                        </div>
+                        <div class="form-group">
+                            {{ form.email.label}}
+                            {{ form.email(class_="form-control") }}
+                            <p class="help-block text-danger"> <small>{{ form.errors.get("email")[0] }}</small> </p>
+
+                        </div>
+                        <div class="form-group form-group-textarea mb-md-0">
+                            {{ form.subject.label}}
+                            {{ form.subject(class_="form-control") }}
+                            <p class="help-block text-danger"> <small>{{ form.errors.get("subject")[0] }}</small> </p>
+
+                        </div>
+                        <div class="form-group form-group-textarea mb-md-0">
+                            {{ form.message.label}}
+                            {{ form.message(class_="form-control text-area") }}
+                            <p class="help-block text-danger"> <small>{{ form.errors.get("message")[0] }}</small> </p>
+
+                        </div>                    
+                        <div id="success">
+                            <button class="btn btn-dark btn-xl text-uppercase" type="submit">Enviar Mensagem</button>
+                            
+                        </div>
+                </form>        
+    
+            </div>
+
+
+        </div>
+
+        <!-- Bootstrap core JS -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+         <!-- Third party plugin JS -->
+        <script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>
+

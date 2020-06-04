@@ -6,10 +6,41 @@ from wtforms.widgets import TextArea
 
 
 class EmailForm(FlaskForm):
-    name = StringField(validators=[
-        DataRequired("Por favor, insira seu nome!"),
-        Length(min=1, max=64)])
-    email = EmailField(validators=[
-        Email(message="Por favor, insira seu email!")])
-    message = StringField(widget=TextArea(), validators=[
-        DataRequired("Por favor, insira seu nome!")])
+    name = StringField(
+        "Nome",
+        render_kw={
+            "placeholder": "Seu Nome *",
+            "label": "name"
+        },
+        validators=[
+            DataRequired("Por favor, insira seu nome!"),
+            Length(min=1, max=64)])
+
+    subject = StringField(
+        "Assunto",
+        render_kw={
+            "placeholder": "Assunto *",
+            "label": "subject"
+        },
+        validators=[
+            DataRequired("Por favor, insira assunto do email!")])
+
+    email = EmailField(
+        "Email",
+        render_kw={
+            "placeholder": "Seu Email *",
+            "label": "email"
+        },
+        validators=[
+            Email(message="Por favor, insira seu email!")])
+
+    message = StringField(
+        "Mensagem",
+        render_kw={
+            "placeholder": "Sua Mensagem *",
+            "style": "width: 200%; min-height: 200px;",
+            "label": "message"
+        },
+        widget=TextArea(),
+        validators=[
+            DataRequired("Por favor, sua mensagem!")])
