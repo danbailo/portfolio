@@ -6095,7 +6095,7 @@ a.close.disabled {
 
 .align-text-top {
   vertical-align: text-top !important;
-}212529
+}
 
 .bg-primary {
   background-color: #F8F9FA !important;
@@ -6135,7 +6135,7 @@ a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
   background-color: #117a8b !important;
-}212529
+}
 
 .bg-warning {
   background-color: #F8F9FA !important;
@@ -6227,7 +6227,7 @@ button.bg-dark:focus {
 
 .border-left-0 {
   border-left: 0 !important;
-}212529
+}
 
 .border-primary {
   border-color: #F8F9FA !important;
@@ -6243,7 +6243,7 @@ button.bg-dark:focus {
 
 .border-info {
   border-color: #17a2b8 !important;
-}212529
+}
 
 .border-warning {
   border-color: #F8F9FA !important;
@@ -9801,7 +9801,7 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important;
-}212529
+}
 
 .text-primary {
   color: #F8F9FA !important;
@@ -9833,7 +9833,7 @@ a.text-success:hover, a.text-success:focus {
 
 a.text-info:hover, a.text-info:focus {
   color: #0f6674 !important;
-}212529
+}
 
 .text-warning {
   color: #F8F9FA !important;
@@ -10037,7 +10037,7 @@ p {
   section {
     padding: 9rem 0;
   }
-212529}
+}
 ::-moz-selection {
   /* background: #F8F9FA; */
   background: #212529;
