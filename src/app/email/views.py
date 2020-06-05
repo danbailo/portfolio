@@ -1,4 +1,4 @@
-from flask import flash, redirect, render_template, url_for
+from flask import flash, redirect, render_template
 from flask_mail import Message
 
 from app import mail

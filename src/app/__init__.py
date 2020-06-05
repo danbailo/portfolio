@@ -16,7 +16,6 @@ def create_app():
     app.config["MAIL_USERNAME"] = MAIL_USERNAME
     app.config["MAIL_PASSWORD"] = MAIL_PASSWORD
     app.jinja_env.filters["render_json"] = render_json
-    # app.config["MAIL_DEFAULT_SENDER"] = 'YOU <danbailotest@gmail.com>'
 
     mail.init_app(app)
 

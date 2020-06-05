@@ -4706,9 +4706,9 @@ a.badge:hover, a.badge:focus {
   border-radius: 10rem;
 }
 
-.badge-primary {
+.badge-212529 {
   color: #fff;
-  background-color: #fed136;
+  background-color: #F8F9FA;
 }
 a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
@@ -4758,9 +4758,9 @@ a.badge-info:focus, a.badge-info.focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
-.badge-warning {
+.badge-212529 {
   color: #fff;
-  background-color: #fed136;
+  background-color: #F8F9FA;
 }
 a.badge-warning:hover, a.badge-warning:focus {
   color: #fff;
@@ -4984,9 +4984,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   justify-content: center;
   overflow: hidden;
   color: #fff;
-  text-align: center;
+  text-align: 212529;
   white-space: nowrap;
-  background-color: #fed136;
+  background-color: #F8F9FA;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5065,10 +5065,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   background-color: #fff;
 }
 .list-group-item.active {
-  z-index: 2;
-  color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
+  z-index: 212529;
+  color: #212529;
+  background-color: #F8F9FA;
+  border-color: #F8F9FA;
 }
 .list-group-item + .list-group-item {
   border-top-width: 0;
@@ -6095,10 +6095,10 @@ a.close.disabled {
 
 .align-text-top {
   vertical-align: text-top !important;
-}
+}212529
 
 .bg-primary {
-  background-color: #fed136 !important;
+  background-color: #F8F9FA !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6135,10 +6135,10 @@ a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
   background-color: #117a8b !important;
-}
+}212529
 
 .bg-warning {
-  background-color: #fed136 !important;
+  background-color: #F8F9FA !important;
 }
 
 a.bg-warning:hover, a.bg-warning:focus,
@@ -6227,10 +6227,10 @@ button.bg-dark:focus {
 
 .border-left-0 {
   border-left: 0 !important;
-}
+}212529
 
 .border-primary {
-  border-color: #fed136 !important;
+  border-color: #F8F9FA !important;
 }
 
 .border-secondary {
@@ -6243,10 +6243,10 @@ button.bg-dark:focus {
 
 .border-info {
   border-color: #17a2b8 !important;
-}
+}212529
 
 .border-warning {
-  border-color: #fed136 !important;
+  border-color: #F8F9FA !important;
 }
 
 .border-danger {
@@ -9801,10 +9801,10 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important;
-}
+}212529
 
 .text-primary {
-  color: #fed136 !important;
+  color: #F8F9FA !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9833,10 +9833,10 @@ a.text-success:hover, a.text-success:focus {
 
 a.text-info:hover, a.text-info:focus {
   color: #0f6674 !important;
-}
+}212529
 
 .text-warning {
-  color: #fed136 !important;
+  color: #F8F9FA !important;
 }
 
 a.text-warning:hover, a.text-warning:focus {
@@ -10037,9 +10037,9 @@ p {
   section {
     padding: 9rem 0;
   }
-}
+212529}
 ::-moz-selection {
-  /* background: #fed136; */
+  /* background: #F8F9FA; */
   background: #212529;
   text-shadow: none;
 }
@@ -10094,14 +10094,16 @@ img::-moz-selection {
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-size: 0.75rem; */
+  font-weight: 700;
   font-size: 0.75rem;
-  color: #fff;
+  color: #212529;
   text-transform: uppercase;
-  background-color: #fed136;
+  background-color: #F8F9FA;
   border: 0;
 }
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: red;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   letter-spacing: 0.0625em;
