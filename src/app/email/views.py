@@ -14,7 +14,7 @@ def send_email():
 
     if form.validate_on_submit():
         msg = Message(
-            subject=form.subject.data,
+            subject="Portfolio - " + form.subject.data,
             sender=f'{form.subject.data} {MAIL_DEFAULT_SENDER}',
             recipients=[RECIPIENTS],
             html=f"""
