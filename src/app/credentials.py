@@ -1,7 +1,10 @@
-import os
+import json
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
-MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
-MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
-MAIL_DEFAULT_SENDER = os.environ.get("MAIL_DEFAULT_SENDER")
-RECIPIENTS = os.environ.get("RECIPIENTS")
+with open("../docs/credentials.json") as file:
+    credentials = json.load(file)
+
+SECRET_KEY = credentials.get("SECRET_KEY")
+MAIL_USERNAME = credentials.get("MAIL_USERNAME")
+MAIL_PASSWORD = credentials.get("MAIL_PASSWORD")
+MAIL_DEFAULT_SENDER = credentials.get("MAIL_DEFAULT_SENDER")
+RECIPIENTS = credentials.get("RECIPIENTS")
