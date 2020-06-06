@@ -10159,8 +10159,8 @@ img::-moz-selection {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-top: 35vh;
+  /* padding-bottom: 6rem; */
   text-align: center;
   color: #fff;
   background-image: url("../img/header-bg.jpg");
@@ -10168,6 +10168,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  height: 100vh;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -10187,8 +10188,9 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    /* padding-top: 15rem; */
+    /* padding-bottom: 10rem; */
+    height: 100vh;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
